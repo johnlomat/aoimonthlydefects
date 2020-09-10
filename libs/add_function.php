@@ -35,7 +35,11 @@
 	//	Add model function
 	if(isset($_POST['add_model'])) {
 		try {
-			$connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+			// Development Connection
+			// $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+			// Remote SQL Connection
+			$connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
 			$query = "SELECT model, assy, side FROM line_defects WHERE line = :line AND model = :model AND assy = :assy AND side = :side";
 			$statement = $connect->prepare($query);
@@ -75,7 +79,11 @@
 	//	Add location function
 	if(isset($_POST['add_location'])) {
 		try {
-			$connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+			// Development Connection
+			// $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+			// Remote SQL Connection
+			$connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$query = "SELECT location, defect FROM model_defects WHERE line = :line AND model = :model AND location = :location AND defect = :defect";
 			$statement = $connect->prepare($query);
@@ -115,7 +123,11 @@
 	//	Add inspection template function
 	if(isset($_POST['add_inspection_template'])) {
 		try {
-			$connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+			// Development Connection
+			// $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+			// Remote SQL Connection
+			$connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
 			$query = "SELECT model, partnumber FROM inspection_template WHERE model = :model";
 			$statement = $connect->prepare($query);
