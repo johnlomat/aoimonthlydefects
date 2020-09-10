@@ -1,0 +1,258 @@
+/* Body styling */
+body, .site-main {
+	height: 100%
+}
+/* Background-alias Style */
+.background-alias {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center
+}
+.background-image {
+	height: 265px
+}
+.column {
+	flex-direction: column;
+	justify-content: center
+}
+.column p {
+	margin: 0!important;
+	font-size: 1.5em;
+	line-height: 15px!important;
+	color: #373737
+}
+.column span {
+	font-size: 1.2em;
+	line-height: 2;
+	color: #616161
+}
+/* Content Style */
+.content {
+	display: none;
+	margin: 80px 0 0 0;
+	padding-top: 65px;
+	width: 100%
+}
+/* MDL Grid */
+.mdl-grid {
+	display: flex;
+	justify-content: center;
+	padding: 0!important;
+	margin: 0!important
+}
+/* Model card */
+.model-card {
+	width: 248px!important;
+	height: 350px;
+	margin: 5px
+}
+.mdl-card__title {
+	justify-content: center!important;
+	height: 185px;
+	flex-direction: column;
+	background: #E0E0E0
+}
+/* Image button */
+.mdl-card__title > button {
+	border: none;
+	color: #9A9E9E;
+	background: none
+}
+.mdl-card__title > button > .material-icons {
+	font-size: 3em
+}
+.mdl-card__title > span {
+	color: #9A9E9E;
+	font-size: 0.8em
+}
+.mdl-card__title > button:hover {
+	color: #656565
+}
+.mdl-card__title:hover > button {
+	display: block!important
+}
+.mdl-card__supporting-text {
+	width: 100%!important;
+	height: 65px;
+	font-size: 1em!important;
+	font-weight: 500;
+	color: black!important
+}
+/* Subtitle */
+.added-by {
+	margin: 0 10px 10px 10px;
+	color: #616770
+}
+.added-by > p {
+	margin: 0!important;
+	line-height: 1.2;
+	text-transform: capitalize
+}
+.added-by > p:first-child {
+	font-weight: 500;
+	color: #373737
+}
+/* Model card buttons */
+.model-card > .mdl-card__actions {
+	display: flex;
+	justify-content: space-between
+}
+.red-color-button.mdl-button {
+	display: none;
+	opacity: 0;
+	font-size: 0.75em;
+	color: #F44235;
+	margin-right: 5px
+}
+.red-color-button:active {
+	background: none!important
+}
+/* Delete Form Style */
+.delete-form-wrapper {
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+	text-align: center
+}
+#form-delete {
+	display: none;
+	width: 350px!important;
+	top: 100px;
+	opacity: 0
+}
+#form-delete > h5 {
+	padding: 0 10px
+}
+.row-right {
+	display: flex;
+	justify-content: flex-end
+}
+.row-right > .button-red {
+	margin-left: 5px
+}
+/* Default Form Style */
+form {
+	padding: 10px 20px 20px 20px
+}
+/* Default Form Title Header Style */
+.row {
+	display: flex;
+	justify-content: flex-end
+}
+.form > .row:first-child {
+	justify-content: space-between;
+	align-items: center;
+	background: #2979FF
+}
+/* Title form close button */
+.row > h5 {
+	font-size: 16px!important;
+	color: white;
+	margin: 5px 10px
+}
+h5 ~ button {
+	border: none;
+	background: none;
+	color: white;
+	padding: 5px
+}
+h5 ~ button:hover {
+	background: #D32F2F
+}
+h5 ~ button > .material-icons {
+	font-size: 1.5em
+}
+/* Add Model Form Style */
+.form-wrapper {
+	display: block;
+	width: 340px;
+	margin: 0 auto;
+	text-align: center
+}
+.row-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center
+}
+/* Input field */
+.textfield-assy {
+	width: 50%!important;
+	margin-right: 5px!important
+}
+.select {
+	background: url("../images/arrow_down.png")  right center/25px no-repeat white;
+	padding: 0;
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	width: 50%;
+	margin-left: 5px;
+	height: 27px;
+	font-size: 1em;
+	border-bottom: 1px solid #E0E0E0
+}
+/* Add Image Form Style */
+.image-form-wrapper {
+	display: block;
+	width: 280px;
+	margin: 0 auto;
+	text-align: center
+}
+#form-image {
+	overflow: hidden;
+}
+.upload {
+	margin: 10px 0;
+	width: 240px
+}
+/* Responsive styling */
+@media (max-width: 480px) {
+	.content {
+		margin: 80px 0 0 0
+	}
+}
+@media (max-width: 350px) {
+	.background-image > img {
+		width: 320px
+	}
+	#form-delete {
+		width: 100%!important
+	}
+}
+@media (max-width: 340px) {
+	#form-add, .upload {
+		display: block;
+		width: 100%;
+	}
+}
+@media (max-width: 280px) {
+	#form-image {
+		display: block;
+		width: 100%
+	}
+}
+@media (max-height: 450px) {
+	.background-image > img:first-child {
+		width: 250px
+	}
+	.background-image {
+		height: 185px
+	}
+}
+@media (max-height: 370px) {
+	.background-image > img:first-child {
+		width: 180px;
+		padding-top: 40px
+	}
+	.background-image {
+		height: 173px
+	}
+}
+/* IE support styling */
+@media screen\0 {
+	h5 ~ button {
+		margin-left: auto!important
+	}
+}

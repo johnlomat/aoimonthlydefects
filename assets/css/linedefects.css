@@ -1,0 +1,372 @@
+/* Body styling */
+body, .site-main {
+	height: 100%
+}
+/* Background-alias Style */
+.background-alias {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center
+}
+.background-image {
+	height: 265px
+}
+.background-image > img {
+	width: 350px
+}
+.column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex-direction: column
+}
+.column p {
+	margin: 0!important;
+	font-size: 1.5em;
+	line-height: 15px!important;
+	color: #373737
+}
+.column span {
+	font-size: 1.2em;
+	line-height: 2;
+	color: #616161
+}
+/* Content Style */
+.content-wrapper {
+	display: none;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 65px 20px 20px 20px
+}
+.content {
+	overflow-x: auto;
+	padding: 20px 0 5px 0;
+	margin-bottom: 0 60px 20px 0
+}
+/* Content header */
+.table-title {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #E0E0E0;
+}
+/* Content header icon */
+.table-title > img, .table-title > h3 {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 10px 10px 0!important;
+	line-height: 1!important
+}
+/* Data table */
+.data-table {
+	display: block;
+	margin: 0!important;
+	padding: 0 0 0 5px!important
+}
+th {
+	line-height: 30px!important;
+	border-bottom: 1px solid #E0E0E0
+}
+td {
+	text-align: left!important;
+	border-left: 1px solid #E0E0E0;
+	padding: 0 10px!important;
+	transition: 0.28s
+}
+td > span {
+	display: flex;
+	width: 160px
+}
+td[data-inspection^="Detected"] {
+	color: green
+}
+td[data-inspection^="Undetected"] {
+	color: red
+}
+/* Default Form Style */
+#form-add > form, #form-delete > form {
+	padding: 10px 20px 20px 20px
+}
+.form > form > .row-right:last-child {
+	padding-top: 20px
+}
+/* Default Form Title Header Style */
+.row-right {
+	display: flex;
+	justify-content: flex-end
+}
+.row-right > h5 {
+	font-size: 16px!important;
+	color: white;
+	margin: 5px 10px
+}
+h5 ~ button {
+	border: none;
+	background: none;
+	color: white;
+	padding: 5px
+}
+h5 ~ button:hover {
+	background: #D32F2F
+}
+h5 ~ button > .material-icons {
+	font-size: 1.5em
+}
+/* Add Location Form Style */
+.add-form-wrapper {
+	display: block;
+	width: 260px;
+	margin: 0 auto;
+	text-align: center
+}
+#form-add {
+	width: 260px
+}
+.form > .row-right:first-child {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: #2979FF
+}
+.row-confirm > select {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 1.1em;
+	border-bottom: 1px solid #E0E0E0
+}
+/* Update data table */
+.option-form-wrapper {
+	display: block;
+	width: 573.5px;
+	margin: 0 auto;
+	text-align: center
+}
+#form-option {
+	display: none;
+	width: 480!important;
+	top: 80px;
+	padding: 20px;
+	opacity: 0
+}
+/* Add location form header */
+.row-title {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.form > .row-title {
+	border-bottom: 1px solid #E0E0E0;
+	margin-bottom: 5px;
+}
+.row-title > p {
+	color: #2979FF;
+	padding-right: 20px;
+	font-weight: 500;
+	margin: 5px 0 10px 0!important
+}
+/* Add location form content */
+.row {
+	width: 50%
+}
+.left {
+	float: left
+}
+.right {
+	float: right
+}
+.row-even {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 5px 5px
+}
+.row-even:hover {
+	background: #E0E0E0
+}
+.container p {
+	margin: 0!important;
+	text-align: left;
+	width: 100px;
+	font-weight: 500!important
+}
+.select {
+	background: url("../images/arrow_down.png")  right center/25px no-repeat white;
+	width: 100px;
+	margin-left: 10px;
+	padding: 0;
+	outline: none;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-khtml-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none
+}
+.container > .row-right:last-child {
+	display: block;
+	float: right;
+	margin-top: 5px
+}
+/* Delete Form Style */
+.delete-form-wrapper {
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+	text-align: center
+}
+#form-delete {
+	display: none;
+	width: 350px!important;
+	top: 100px;
+	opacity: 0
+}
+#form-delete > h5 {
+	margin-bottom: 0
+}
+.row-right > .button-red {
+	margin-left: 5px
+}
+/* Disable hovering effect for touchscreen devices */
+@media not all and (pointer: coarse) {
+	td:hover {
+		background: #E0E0E0!important
+	}
+}
+/* Responsive Styling */
+@media(max-width: 1025px) {
+	.content-wrapper {
+		padding-top: 55px
+	}
+}
+@media(max-width: 780px) {
+	h3 {
+		font-size: 2em!important
+	}
+	.table-title > img {
+		width: 30px
+	}
+}
+@media(max-width: 700px) {
+	td {
+		white-space: normal
+	}
+	td > span {
+		width: 100%
+	}
+	.defect-row > span {
+		width: 85px
+	}
+}
+@media(max-width: 620px) {
+	h3 {
+		font-size: 1.5em!important
+	}
+	.table-title > img {
+		width: 25px
+	}
+}
+@media(max-width: 576px) {
+	.content {
+		margin-right: 50px
+	}
+}
+@media(max-width: 485px) {
+	.table-title {
+		display: block;
+		border-bottom: 1px solid #E0E0E0
+	}
+	h3 {
+		font-size: 1.2em!important;
+		line-height: 1!important
+	}
+	.table-title > img {
+		width: 20px
+	}
+}
+@media(max-width: 480px) {
+	#form-option {
+		width: 100%!important
+	}
+	.container {
+		width: 480px
+	}
+	.row-title {
+		width: 480px
+	}
+	.row {
+		display: block;
+		width: 234px
+	}
+	.row-even {
+		width: 240px!important;
+		white-space: nowrap;
+	}
+}
+@media(max-width: 405px) {
+	.table-title > img {
+		display: none!important	
+	}
+}
+@media (max-width: 350px) {
+	#form-delete {
+		width: 100%!important
+	}
+	.background-image > img {
+		width: 320px
+	}
+}
+@media(max-width: 260px) {
+	#form-add {
+		width: 100%!important
+	}
+}
+@media (max-height: 450px) {
+	.background-image > img:first-child {
+		width: 250px
+	}
+	.background-image {
+		height: 185px
+	}
+}
+@media (max-height: 435px) {
+	#form-option {
+		top: 35px
+	}
+}
+@media (max-height: 390px) {
+	#form-option {
+		top: 15px
+	}
+}
+@media (max-height: 370px) {
+	.background-image > img:first-child {
+		width: 180px;
+		padding-top: 40px
+	}
+	.background-image {
+		height: 173px
+	}
+	#form-option {
+		top: 5px
+	}
+}
+@media (max-height: 360px) {
+	#form-option {
+		top: -15px
+	}
+}
+/* IE Support Styling*/
+@media screen\0 {
+	h5 ~ button {
+		margin-left: auto!important
+	}
+	.row-title > button {
+		margin-left: auto!important
+	}
+}

@@ -1,0 +1,40 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box!important;
+	-moz-box-sizing: border-box!important;
+	box-sizing: border-box!important;
+	font-family: "Roboto",Lato;
+	list-style: none;
+	text-decoration: none;
+	top: 0
+}
+html {
+	height: 100%
+}
+/* Body wrapper */
+body, .site-main {
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center
+}
+/* Logo Style */
+.logo {
+	text-align: center;
+	margin: 0 auto
+}
+/* Positioning */
+.demo-card-wide.mdl-card {
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+	padding: 20px
+}
+/* Spinner */
+.mdl-spinner {
+	text-align: center;
+	margin: 0 auto
+}

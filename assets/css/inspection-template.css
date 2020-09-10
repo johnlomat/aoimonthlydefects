@@ -1,0 +1,234 @@
+.content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center
+}
+.data-table, .mdl-data-table, .mdl-js-data-table, .mdl-shadow--2dp {
+    margin: 0 auto
+}
+
+/* Data table title styling*/
+.table-title {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.table-title > img {
+    margin-right: 10px
+}
+.data-table {
+    overflow-x: auto;
+	padding-bottom: 60px;
+	margin-bottom: 10px
+}
+.data-table th, .data-table td {
+	text-align: left!important
+}
+
+/* Data table styling */
+.mdl-data-table {
+	width: 1235px
+}
+.mdl-progress {
+    width: 200px!important
+}
+.percentage {
+    margin: -10px 0 0 0;
+    font-size: 0.9em;
+	line-height: 1;
+	text-align: right!important;
+    color: #2979FF
+}
+tbody > tr > td:first-child {
+	width: 280px
+}
+tbody > tr > td:nth-child(3) {
+	width: 200px
+}
+tbody > tr > td:nth-child(4) {
+	width: 225px
+}
+tbody > tr > td:nth-child(5) {
+	width: 200px;
+	padding: 12px 25px
+}
+tbody > tr > td:last-child {
+	width: 155px
+}
+tr:hover > td > button, td > button:focus {
+	opacity: 1;
+	color: #545454
+}
+.button-icon {
+	display: block!important;
+	float: left;
+	margin: 0 10px 0 0!important
+}
+.button-icon > i {
+	font-size: 1.5em!important;
+	vertical-align: middle
+}
+
+/* Default Form Style */
+form {
+	padding: 10px 20px 20px 20px
+}
+
+/* Default Form Title Header Style */
+.row {
+	display: flex;
+	justify-content: flex-end
+}
+.form > .row:first-child {
+	justify-content: space-between;
+	align-items: center;
+	background: #2979FF
+}
+
+/* Title form close button */
+.row > h5 {
+	font-size: 16px!important;
+	color: white;
+	margin: 5px 10px
+}
+h5 ~ button {
+	border: none;
+	background: none;
+	color: white;
+	padding: 5px
+}
+h5 ~ button:hover {
+	background: #D32F2F
+}
+h5 ~ button > .material-icons {
+	font-size: 1.5em
+}
+
+/* Add Model Form Style */
+.form-wrapper {
+	display: block;
+	width: 490px;
+	margin: 0 auto;
+	text-align: center
+}
+.row-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center
+}
+
+/* Input field */
+.textfield-partno, .status {
+    width: 140px!important;
+    margin: 0 5px 0 0!important
+}
+.select {
+	background: url("../images/arrow_down.png")  right center/25px no-repeat white;
+	padding: 0;
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	width: 50%;
+	margin-left: 5px;
+	height: 27px;
+	font-size: 1em;
+	border-bottom: 1px solid #E0E0E0
+}
+.project, .customer {
+    width: 300px
+}
+#form-add > form > div:last-child > button {
+    margin-top: 10px
+}
+#form-add > form > .row > div {
+    width: 450px
+}
+
+/* Delete Form Style */
+.delete-form-wrapper {
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+	text-align: center
+}
+#form-delete {
+	display: none;
+	width: 350px!important;
+	top: 100px;
+	opacity: 0
+}
+#form-delete > h5 {
+	margin-bottom: 0
+}
+.row-right {
+	display: flex;
+	justify-content: flex-end
+}
+.row-right > .button-red {
+	margin-left: 5px
+}
+.search-btn > div > input {
+	border-bottom: none!important
+}
+
+/* Pagination Styling*/
+.pagination > td {
+	border: none!important;
+	padding: 0 0 0 25px!important;
+	width: 0
+}
+.pagination > td:nth-child(1) > div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 255px
+}
+.pagination > td > div > button:nth-child(3) {
+	border: none;
+	margin-left: 5px!important
+}
+.pagination p {
+	margin: 0;
+	font-size: 1em;
+	color: #767676
+}
+.pagination button {
+	color: #545454
+}
+.pagination:hover {
+	background: none!important
+}
+
+.search-btn {
+	position: fixed!important;
+	bottom: 120px;
+	right: 10px;
+	z-index: 2
+}
+
+/* Responsive styling */
+@media(max-width: 1340px) {
+    .content-wrapper {
+        padding: 10px 70px 10px 10px
+    }
+}
+@media(max-width: 730px) {
+	.mdl-data-table th {
+		padding-right: 30px!important
+	}
+}
+@media(max-width: 600px) {
+	.table-title > h2 {
+		font-size: 1.7em;
+		margin: 0!important
+	}
+	.table-title > img {
+		width: 35px
+	}
+}
+@media(max-width: 370px) {
+	.table-title > img {
+		display: none
+	}
+}

@@ -1,0 +1,141 @@
+html {
+	height: 100%
+}
+/* Body Background */
+body, .site-main {
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center
+}
+/* Form Style */
+.demo-card-wide {
+	border-radius: 8px;
+	padding: 25px 20px;
+	margin: 10px;
+	width: 375px!important
+}
+.logo {
+	margin-bottom: 10px
+}
+.row {
+	display: flex;
+	align-items: center
+}
+.mdl-textfield > input:first-child {
+	margin-right: 10px
+}
+/* Full Name */
+.mdl-name {
+	width: 160px!important
+}
+/* Datepicker */
+#datepicker {
+	border: none
+}
+.mdl-datepicker {
+	display: flex!important;
+	flex-direction: row-reverse;
+	width: 160px!important
+}
+[role=body] {
+	width: 310px;
+	background: white;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+	padding: 5px;
+	margin-left: -150px
+}
+td.selected.gj-cursor-pointer div {
+	background: #2196F3!important;
+	color: white!important
+}
+.gj-picker-md table tr td.today div {
+	color: #2196F3!important
+}
+.gj-picker-md table tr td.selected.gj-cursor-pointer div {
+	color: white!important
+}
+td.gj-cursor-pointer div:hover {
+	background: #BBDEFB!important
+}
+.event, .chevron-left, .chevron-right {
+	color: #2196F3!important;
+}
+/* Gender */
+.toggle-gender {
+	margin-left: 10px;
+}
+.toggle-gender > .mdl-radio:first-child {
+	padding-right: 20px
+}
+/* Email */
+.mdl-email {
+	width: 335px!important
+}
+/* Form buttons */
+.row-last {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	margin-top: 10px
+}
+.mdl-signin {
+	color: #2476E8!important;
+	padding: 0 10px!important
+}
+.mdl-signin:hover {
+	background: #F6FAFE!important
+}
+.mdl-confirm {
+	background: #2196F3!important
+}
+.mdl-ripple {
+	background: #448AFF!important
+}
+.mdl-signin:active {
+	background: none!important
+}
+.success {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em
+}
+/* Responsive styling */
+@media (max-width: 395px) {
+	.site-main {
+		display: block;
+		padding: 10px;
+		width: 100%
+	}
+	.demo-card-wide {
+		display: flex;
+		width: 100%!important;
+		margin: 0
+	}
+	.row {
+		flex-direction: column
+	}
+	.mdl-name, .mdl-email, .mdl-textfield, .date-picker {
+		width: 100%!important
+	}
+	.row-last {
+		flex-direction: column;
+		margin-top: 0
+	}
+	.mdl-confirm {
+		margin-bottom: 10px!important
+	}
+}
+@media (max-width: 355px) {
+	.gj-picker {
+		left: 160px!important
+	}
+}
+@media (max-width: 329px) {
+	.gj-picker {
+		left: 160px!important
+	}
+}

@@ -1,0 +1,92 @@
+/* HTML height style */
+html {
+	height: 100%
+}
+/* Navbar Positioning */
+.mdl-layout__header {
+	top: 0;
+	position: fixed!important
+}
+/* Logo Styling */
+.logo {
+	margin-left: -40px!important
+}
+/* Dropdown Position */
+.dropdown {
+	position: relative;
+}
+/* Dropdown Button Style */
+.dropbtn {
+	font-size: 2.8em!important;
+	color: white;
+	padding: 13px 10px;
+	transition: 0.1s
+}
+.cursor:focus > i {
+	background-color: rgba(0,0,0,0.5)
+}
+/* Dropdown Content Style */
+.dropdown-content {
+    display: none;
+    position: absolute;
+	top: 65px;
+	background: white;
+	right: 0;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
+}
+.profile {
+	display: block;
+	color: #1F0000;
+	font-size: 0.9em;
+	padding: 10px 20px 0 20px;
+	border-bottom: 1px solid #C4C4C4;
+	white-space: nowrap;
+	text-transform: capitalize
+}
+.profile p {
+	font-weight: 500!important
+}
+.dropdown-content a {
+    display: block;
+	font-size: 1em;
+	font-weight: 400;
+	color: black;
+	padding: 7px 25px 7px 15px;
+	background: white;
+	white-space: nowrap
+}
+.dropdown-row {
+	padding: 5px 0
+}
+.dropdown-show {
+    display: block!important
+}
+.drop-icon {
+	padding-right: 15px;
+	font-size: 1.8em!important;
+	vertical-align: middle;
+	color: #656565
+}
+/* Disable hovering effect on touchscreen devices */
+@media not all and (pointer: coarse) {
+	.dropdown-row a:hover {
+		background: #F2F2F2;
+		color: black
+	}
+	.dropbtn:hover {
+		background-color: rgba(0,0,0,0.5)
+	}
+}
+/* Responsive styling */
+@media (max-width: 1024px) {
+	.logo {
+		width: 50px
+	}
+	.dropbtn {
+		font-size: 2.5em!important;
+		padding: 11px 10px
+	}
+	.dropdown-content {
+		top: 55px
+	}
+}

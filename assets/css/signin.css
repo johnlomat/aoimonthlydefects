@@ -1,0 +1,71 @@
+html {
+	height: 100%
+}
+/* Body wrapper */
+body, .site-main {
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center
+}
+/* Logo style */
+.logo {
+	text-align: center;
+	margin: 0 auto 20px auto
+}
+/* Login Form Style */
+.demo-card-wide {
+	margin: 10px;
+	border-radius: 8px;
+	padding: 30px
+}
+/* Forgot password */
+.forgot {
+	display: flex;
+	align-items: flex-start
+}
+.forgot a {
+	font-size: 0.9em;
+	color: #E91E63
+}
+.forgot a:focus {
+	outline: 1px solid pink
+}
+/* Buttong positioning */
+.logbtn-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	padding: 25px 0 0 0
+}
+.mdl-signin {
+	font-size: 0.75em!important;
+	color: #2476E8!important;
+	padding: 0 10px!important;
+	margin-left: -10px!important
+}
+/* Signup Button Style */
+.mdl-signin:hover {
+	background: #F6FAFE!important
+}
+.mdl-ripple {
+	background: #448AFF!important
+}
+.mdl-signin:active, .mdl-button__ripple-container:active {
+	background: none!important
+}
+@media (max-width: 350px) {
+	.site-main {
+		padding: 20px
+	}
+	.demo-card-wide {
+		display: flex;
+		width: 100%!important;
+		margin: 0
+	}
+	.mdl-textfield {
+		width: 100%!important
+	}
+}
