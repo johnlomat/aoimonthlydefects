@@ -9,7 +9,11 @@
 	//	Delete model function
 	if(isset($_POST['delete_model'])) {
 		try {
-			$connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+			// Development Connection
+			// $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+			// Remote SQL Connection
+			$connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$query1 = "DELETE FROM line_defects WHERE id = :id";
 			$query2 = "DELETE FROM model_defects WHERE line = :line AND model = :model";
@@ -32,7 +36,11 @@
 	//	Delete location function
 	if(isset($_POST['delete_location'])) {
 		try {		
-			$connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+			// Development Connection
+			// $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+			// Remote SQL Connection
+			$connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$query = "DELETE FROM model_defects WHERE id = :id";
 			$statement = $connect->prepare($query);
@@ -50,7 +58,11 @@
 	// Delete inspection template function
 	if(isset($_POST['inspection_template_id'])) {
 		try {		
-			$connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+			// Development Connection
+			// $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+			// Remote SQL Connection
+			$connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$query = "DELETE FROM inspection_template WHERE id = :id";
 			$statement = $connect->prepare($query);
