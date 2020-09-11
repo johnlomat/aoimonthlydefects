@@ -5,6 +5,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!-- Facebook meta tags -->
+<meta property="og:url" content="http://aoimonthlydefects.herokuapp.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TRI AOI | Monthly Defects " />
+<meta property="og:description" content="Develop a PHP web-based system that will record the detection of model product defects in AOI Machine." />
+<meta property="og:image" content="http://aoimonthlydefects.herokuapp.com/assets/images/AOI-Monthly-Defects.png" />
+
+<!-- Twitter meta tags -->
+<meta property="twitter:url" content="http://aoimonthlydefects.herokuapp.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="TRI AOI | Monthly Defects" />
+<meta name="twitter:description" content="Develop a PHP web-based system that will record the detection of model product defects in AOI Machine." />
+<meta name="twitter:image" content="http://aoimonthlydefects.herokuapp.com/assets/images/AOI-Monthly-Defects.png" />
+
 <title><?= $title->Title() ?></title>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
