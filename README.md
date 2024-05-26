@@ -12,11 +12,12 @@ Follow these steps to configure the database connection in `libs/server.php`:
 2. Locate the section where the database connection parameters are defined. It typically looks like this:
 
     ```php
-    // Database configuration
-    $dbHost     = 'localhost';
-    $dbUsername = 'username';
-    $dbPassword = 'password';
-    $dbName     = 'database_name';
+    // Development Connection
+    // $connect = new PDO("mysql:host=localhost;dbname=aoi_monthly_defects","root","root");
+
+    // Remote SQL Connection
+    $connect = new PDO("mysql:host=remotemysql.com;dbname=OuqhQAwYnh","OuqhQAwYnh","7DjFAmL7Ey");
+    $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     ```
 
 3. Update the values of `$dbHost`, `$dbUsername`, `$dbPassword`, and `$dbName` with your MySQL database connection details.
